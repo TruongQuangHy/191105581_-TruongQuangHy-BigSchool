@@ -88,4 +88,6 @@ d:\bigshool\191105581_TruongQuangHy-BigSchool\191105581_TruongQuangHy-BigSchool\
 d:\bigshool\191105581_TruongQuangHy-BigSchool\191105581_TruongQuangHy-BigSchool\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
 d:\bigshool\191105581_TruongQuangHy-BigSchool\191105581_TruongQuangHy-BigSchool\obj\Debug\_191105581_TruongQuangHy_BigSchool.Migrations.CreateTableCourse.resources
 d:\bigshool\191105581_TruongQuangHy-BigSchool\191105581_TruongQuangHy-BigSchool\obj\Debug\_191105581_TruongQuangHy_BigSchool.Migrations.PopulateCategoryTable.resources
+d:\bigshool\191105581_TruongQuangHy-BigSchool\191105581_TruongQuangHy-BigSchool\obj\Debug\_191105581_TruongQuangHy_BigSchool.Migrations.AddNameColumnToApplicationUser1.resources
+d:\bigshool\191105581_TruongQuangHy-BigSchool\191105581_TruongQuangHy-BigSchool\obj\Debug\191105581_TruongQuangHy-BigSchool.csproj.CopyComplete
 d:\bigshool\191105581_TruongQuangHy-BigSchool\191105581_TruongQuangHy-BigSchool\obj\Debug\191105581_TruongQuangHy-BigSchool.csproj.AssemblyReference.cache

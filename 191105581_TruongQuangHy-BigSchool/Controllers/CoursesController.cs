@@ -1,27 +1,34 @@
 ﻿using _191105581_TruongQuangHy_BigSchool.Models;
-using _191105581_TruongQuangHy_BigSchool.ViewModels;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
 
-namespace _191105581_TruongQuangHy_BigSchool.Controllers
+namespace _191105581_TruongQuangHy_BigSchool.Controllers.Api
 {
-    public class CoursesController : Controller
+    public class CoursesController : ApiController
     {
-        private readonly ApplicationException _dbContext;
+        public ApplicationDbContext _dbContext { get; set; }
+
         public CoursesController()
         {
             _dbContext = new ApplicationDbContext();
         }
-        // GET: Courses
-        public ActionResult Create  ()
+
+        [HttpDelete]
+        public IHttpActionResult Cancel(int id)
         {
-            var viewModel = new CourseViewModel()
-            {
-            };
-            return View();
+            var userId = User.Identity.GetUserId();
+            var course = _dbContext.Courses.Single(c => c.Id == id && c.LecturerId == userId);
+            if (course.IsCanceled)
+                return NotFound();
+            course.IsCanceled = true;
+            _dbContext.SaveChanges();
+
+            return Ok();
         }
     }
 }
